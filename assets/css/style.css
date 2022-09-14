@@ -146,6 +146,28 @@ form{
     width: 70%;
 }
 
+#history{
+    width: 90%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(154, 148, 148);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#history button{
+    background-color: #22145E;
+    color: #fff;
+    border: 1px solid #22145E;
+}
+#history p i{
+    font-size: 10em;
+}
+
 @media only screen and (max-width:600px) {
 
     nav{
