@@ -27,16 +27,6 @@ nav{
     position: relative;
 }
 
-#noti{
-    position: absolute;
-    background-color: red;
-    top: -5px;
-    right: 10px;
-    color: #fff;
-    border-radius: 5px;
-    padding:0px 3px;
-    font-size: small;
-}
 
 #greeting{
     margin-left: auto;
@@ -184,6 +174,12 @@ form{
     }
     .nav-menu{
         display: none;
+    }
+    .nav-menu .nav{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     
     #mobile-nav{
