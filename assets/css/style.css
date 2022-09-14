@@ -167,19 +167,21 @@ form{
         display: flex;
         justify-content: space-between;
         padding: 0.7em 1em;
+        gap: 1em;
     }
 
     #user-details{
         width: 90%;
     }
     .nav-menu{
-        display: none;
+
     }
     .nav-menu .nav{
         font-size: small;
         display: flex;
-        flex-direction: column;
         flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 1em;
     }
     
     #mobile-nav{
