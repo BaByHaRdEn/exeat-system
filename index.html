@@ -22,51 +22,66 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="exeat.html">Exeat</a>
+                    <a class="nav-link" href="pending-exeats.html">Pending Exeats</a>
                 </li>
-                <li class="nav-item" id="notification">
-                    <a class="nav-link" href="history.html"><i class="fa fa-history"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div id="greeting">
-        <i class="fa fa-cloud"></i> 
-        <p id="timing"></p>
+        <p id="timing"> Welcome Admin</p>
     </div>
 
-    <div id="user-details">
+    <div id="container">
         <div id="user-picture">
-            <img src="assets/img/profileimg.png" alt="profile photo">
-        </div>
-        <div id="user-info">
-            <p >Name: <span id="name">Ogbormeh Micheal</span></p>
-            <p>Gender: <span id="gender">Male</span></p>
-            <p>Matric No: <span id="matricNo">ADUN/FS/18/312</span></p>
-            <p>Faculty: <span id="faculty">Science</span></p>
-            <p>Program: <span id="program">Software Engineering</span></p>
-            <p>Academic Level: <span id="level">400</span></p>
-            <p>Session: <span id="session">2021/2022</span></p>
-            <p>Email: <span id="email">ogbormehmike@sporty.com</span></p>
-            <p>Phone No: <span id="phoneNo">08056548524</span></p>
-            <p>Parent's Phone No: <span id="parentPhoneNo">07096472315</span></p>
-            <p>Address: <span id="address">7 Tam David West Crescent, Katampe Extension, Abuja FCT, Nigeria</span></p>
-
-            <div id="edit">
-                <button class="btn btn-secondary"><i class="fa fa-pencil-square"></i></button>
+            <img src="assets/img/admin.png" alt="profile photo">
+            <div id="user-profile">
+                <p>Name: Dr. Dominic</p>
+                <p>Staff ID: ADUN/FASS/TS/647</p>
+                <p>Position: Dean of Student Affairs</p>
             </div>
+        </div>
+        <div id="side-navigation">
+          <div class="side-nav">
+            <a href="pending-exeats.html">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <p>Pending Exeats</p>
+            </a>
+            </div>
+            <div class="side-nav">
+                <a href="all-exeats.html">
+                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    <p>All Exeats</p>
+                </a>
+            </div>
+            <div class="side-nav">
+                <a href="settings.html">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <p>Settings</p>
+                </a>
+            </div>
+            <div class="side-nav">
+                <a href="#">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <p>Logout</p>
+                </a>
+            </div>
+
         </div>
     </div>
 
 
     <footer> 2022 &copy; Copyright of ADUN Exeat Management System</footer>
 </body>
-<script src="assets/js/index.js"></script>
 <script>
-    let d= new Date();
+    /*let d= new Date();
 let time= d.getHours();
-console.log(document.getElementById("timing"))
  if(time < 12){
   document.getElementById("timing").innerHTML="Good Morning Micheal"
  } else if(time >= 12 && time < 18){
@@ -74,5 +89,6 @@ console.log(document.getElementById("timing"))
  }else{
   document.getElementById("timing").innerHTML="Good Evening Micheal";
  }
+ */
 </script>
 </html>

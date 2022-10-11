@@ -46,7 +46,7 @@ nav{
     font-weight:700;
 }
 
-#user-details{
+#container{
     width: 80%;
     margin: 3em auto;
     padding: 0.5em;
@@ -54,29 +54,61 @@ nav{
     justify-content:space-between;
 }
 
-#user-info{
+#side-navigation{
     font-family: serif;
     font-weight: 600;
     color: #22145E;
     font-size: larger;
-    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    width: 50%;
 }
 
-#edit button{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0px;
-    left: 90%;
+#side-navigation .side-nav{
+    width: 200px;
+    height: 150px;
+    background-color: #22145E;
+    border-radius: 5px;
+    color: #fff;
+    align-self: center;
+}
+
+#side-navigation .side-nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-nav i {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: xx-large;
+    margin-top: 30%;
+}
+.side-nav p{
+    display: flex;
+    justify-content: center;
 }
 
 #user-picture{
     width: 400px;
     height: 400px;
+    width: 50%;
 }
 #user-picture img{
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
+}
+
+#user-profile{
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer{
@@ -170,11 +202,8 @@ form{
         gap: 1em;
     }
 
-    #user-details{
-        width: 90%;
-    }
     .nav-menu .nav{
-        font-size: small;
+        font-size: xx-small;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
@@ -193,29 +222,51 @@ form{
         font-size: smaller;
     }
 
-    #user-details{
-        width: 80%;
+    #container{
+        width: 90%;
+        margin:0;
+        padding: 0.5em;
+        display: flex;
+        justify-content:space-between;
         flex-direction: column;
-        align-items: center;  
+        gap: 20px;
     }
     
-    #user-info{
-        font-size: small;
-        align-self: center;
-        margin-top: 2em;
-    }
+
     #user-picture{
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        gap: 50px;
     }
 
     #user-picture img{
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+    #user-profile{
+        margin-top: 0;
+        gap: 0;
+        font-size: medium;
+    }
+
+    #side-navigation{
+      margin-top:50px;
+    }
+    
+    #side-navigation .side-nav{
         width: 200px;
-        height: 200px;
+        height: 150px;
+        background-color: #22145E;
+        border-radius: 5px;
+        color: #fff;
+        align-self: center;
     }
 
     footer{
         font-size: small;
+        text-align: center;
     }
 
     #exeat-header{
