@@ -33,7 +33,7 @@
 
     <div id="greeting">
         <i class="fa fa-cloud"></i> 
-        <p>Good Morning Micheal!</p>
+        <p id="timing"></p>
     </div>
 
     <div id="user-details">
@@ -63,4 +63,16 @@
     <footer> 2022 &copy; Copyright of ADUN Exeat Management System</footer>
 </body>
 <script src="assets/js/index.js"></script>
+<script>
+    let d= new Date();
+let time= d.getHours();
+console.log(document.getElementById("timing"))
+ if(time < 12){
+  document.getElementById("timing").innerHTML="Good Morning Micheal"
+ } else if(time >= 12 && time < 18){
+  document.getElementById("timing").innerHTML="Good Afternoon Micheal"
+ }else{
+  document.getElementById("timing").innerHTML="Good Evening Micheal";
+ }
+</script>
 </html>

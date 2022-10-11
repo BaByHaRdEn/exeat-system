@@ -1,11 +1,11 @@
 let history=document.getElementById("history");
+let greeting = document.getElementById('greeting');
 
 
-  let goBack=()=> {
-    window.history.back()
-  }
 
-  if(history.innerHTML !== null){
+
+  let exeatHistory= [];
+  if(exeatHistory.length == 0){
     history.innerHTML= `
     <p><i class="fa fa-history"></i></p>
 
@@ -13,3 +13,7 @@ let history=document.getElementById("history");
     <button class="btn btn-danger " onclick="goBack()">Apply for exeat<i class="fa fa-angle-double-right"></i></button>
     `
   }
+  let goBack=()=> {
+    window.history.back();
+  }
+
